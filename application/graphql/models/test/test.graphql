@@ -1,0 +1,12 @@
+type Query {
+    posts:String
+}
+
+type Post {
+    id:ID!,
+    text:String!
+}
+
+type Mutation {
+  deletePost(id: ID!): Post!
+}
